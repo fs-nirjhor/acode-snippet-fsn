@@ -1,0 +1,1694 @@
+<acodsnip class="html">
+# Some useful Unicode entities
+# Non-Breaking Space
+snippet nbs
+	&nbsp;
+# ←
+snippet left
+	&#x2190;
+# →
+snippet right
+	&#x2192;
+# ↑
+snippet up
+	&#x2191;
+# ↓
+snippet down
+	&#x2193;
+# ↩
+snippet return
+	&#x21A9;
+# ⇤
+snippet backtab
+	&#x21E4;
+# ⇥
+snippet tab
+	&#x21E5;
+# ⇧
+snippet shift
+	&#x21E7;
+# ⌃
+snippet ctrl
+	&#x2303;
+# ⌅
+snippet enter
+	&#x2305;
+# ⌘
+snippet cmd
+	&#x2318;
+# ⌥
+snippet option
+	&#x2325;
+# ⌦
+snippet delete
+	&#x2326;
+# ⌫
+snippet backspace
+	&#x232B;
+# ⎋
+snippet esc
+	&#x238B;
+# Attributes
+snippet attr
+	${1:attribute}="${2:property}"
+snippet attr+
+	${1:attribute}="${2:property}" attr+${3}
+snippet .
+	className="${1}"${2}
+snippet #
+	id="${1}"${2}
+snippet alt
+	alt="${1}"${2}
+snippet charset
+	charset="${1:utf-8}"${2}
+snippet data
+	data-${1}="${2:$1}"${3}
+snippet for
+	for="${1}"${2}
+snippet height
+	height="${1}"${2}
+snippet href
+	href="${1:#}"${2}
+snippet lang
+	lang="${1:en}"${2}
+snippet media
+	media="${1}"${2}
+snippet name
+	name="${1}"${2}
+snippet rel
+	rel="${1}"${2}
+snippet scope
+	scope="${1:row}"${2}
+snippet src
+	src="${1}"${2}
+snippet title=
+	title="${1}"${2}
+snippet type
+	type="${1}"${2}
+snippet value
+	value="${1}"${2}
+snippet width
+	width="${1}"${2}
+# Elements
+snippet a
+	<a href="${1:#}">${2:$1}</a>
+snippet a.
+	<a className="${1}" href="${2:#}">${3:$1}</a>
+snippet a#
+	<a id="${1}" href="${2:#}">${3:$1}</a>
+snippet a:ext
+	<a href="http://${1:example.com}">${2:$1}</a>
+snippet a:mail
+	<a href="mailto:${1:joe@example.com}?subject=${2:feedback}">${3:email me}</a>
+snippet abbr
+	<abbr title="${1}">${2}</abbr>
+snippet address
+	<address>
+		${1}
+	</address>
+snippet area
+	<area shape="${1:rect}" coords="${2}" href="${3}" alt="${4}" />
+snippet area+
+	<area shape="${1:rect}" coords="${2}" href="${3}" alt="${4}" />
+	area+${5}
+snippet area:c
+	<area shape="circle" coords="${1}" href="${2}" alt="${3}" />
+snippet area:d
+	<area shape="default" coords="${1}" href="${2}" alt="${3}" />
+snippet area:p
+	<area shape="poly" coords="${1}" href="${2}" alt="${3}" />
+snippet area:r
+	<area shape="rect" coords="${1}" href="${2}" alt="${3}" />
+snippet article
+	<article>
+		${1}
+	</article>
+snippet article.
+	<article className="${1}">
+		${2}
+	</article>
+snippet article#
+	<article id="${1}">
+		${2}
+	</article>
+snippet aside
+	<aside>
+		${1}
+	</aside>
+snippet aside.
+	<aside className="${1}">
+		${2}
+	</aside>
+snippet aside#
+	<aside id="${1}">
+		${2}
+	</aside>
+snippet audio
+	<audio src="${1}>${2}</audio>
+snippet b
+	<b>${1}</b>
+snippet base
+	<base href="${1}" target="${2}" />
+snippet bdi
+	<bdi>${1}</bdo>
+snippet bdo
+	<bdo dir="${1}">${2}</bdo>
+snippet bdo:l
+	<bdo dir="ltr">${1}</bdo>
+snippet bdo:r
+	<bdo dir="rtl">${1}</bdo>
+snippet blockquote
+	<blockquote>
+		${1}
+	</blockquote>
+snippet body
+	<body>
+		${1}
+	</body>
+snippet br
+	<br />${1}
+snippet button
+	<button type="${1:submit}">${2}</button>
+snippet button.
+	<button className="${1:button}" type="${2:submit}">${3}</button>
+snippet button#
+	<button id="${1}" type="${2:submit}">${3}</button>
+snippet button:s
+	<button type="submit">${1}</button>
+snippet button:r
+	<button type="reset">${1}</button>
+snippet canvas
+	<canvas id="${1:canvas}"></canvas>
+snippet caption
+	<caption>${1}</caption>
+snippet cite
+	<cite>${1}</cite>
+snippet code
+	<code>${1}</code>
+snippet col
+	<col />${1}
+snippet col+
+	<col />
+	col+${1}
+snippet colgroup
+	<colgroup>
+		${1}
+	</colgroup>
+snippet colgroup+
+	<colgroup>
+		<col />
+		col+${1}
+	</colgroup>
+snippet command
+	<command type="command" label="${1}" icon="${2}" />
+snippet command:c
+	<command type="checkbox" label="${1}" icon="${2}" />
+snippet command:r
+	<command type="radio" radiogroup="${1}" label="${2}" icon="${3}" />
+snippet datagrid
+	<datagrid>
+		${1}
+	</datagrid>
+snippet datalist
+	<datalist>
+		${1}
+	</datalist>
+snippet datatemplate
+	<datatemplate>
+		${1}
+	</datatemplate>
+snippet dd
+	<dd>${1}</dd>
+snippet dd.
+	<dd className="${1}">${2}</dd>
+snippet dd#
+	<dd id="${1}">${2}</dd>
+snippet del
+	<del>${1}</del>
+snippet details
+	<details>${1}</details>
+snippet dfn
+	<dfn>${1}</dfn>
+snippet dialog
+	<dialog>
+		${1}
+	</dialog>
+snippet div
+	<div>
+		${1}
+	</div>
+snippet div.
+	<div className="${1}">
+		${2}
+	</div>
+snippet div#
+	<div id="${1}">
+		${2}
+	</div>
+snippet dl
+	<dl>
+		${1}
+	</dl>
+snippet dl.
+	<dl className="${1}">
+		${2}
+	</dl>
+snippet dl#
+	<dl id="${1}">
+		${2}
+	</dl>
+snippet dl+
+	<dl>
+		<dt>${1}</dt>
+		<dd>${2}</dd>
+		dt+${3}
+	</dl>
+snippet dt
+	<dt>${1}</dt>
+snippet dt.
+	<dt className="${1}">${2}</dt>
+snippet dt#
+	<dt id="${1}">${2}</dt>
+snippet dt+
+	<dt>${1}</dt>
+	<dd>${2}</dd>
+	dt+${3}
+snippet em
+	<em>${1}</em>
+snippet embed
+	<embed src=${1} type="${2} />
+snippet fieldset
+	<fieldset>
+		${1}
+	</fieldset>
+snippet fieldset.
+	<fieldset className="${1}">
+		${2}
+	</fieldset>
+snippet fieldset#
+	<fieldset id="${1}">
+		${2}
+	</fieldset>
+snippet fieldset+
+	<fieldset>
+		<legend><span>${1}</span></legend>
+		${2}
+	</fieldset>
+	fieldset+${3}
+snippet figcaption
+	<figcaption>${1}</figcaption>
+snippet figure
+	<figure>${1}</figure>
+snippet footer
+	<footer>
+		${1}
+	</footer>
+snippet footer.
+	<footer className="${1}">
+		${2}
+	</footer>
+snippet footer#
+	<footer id="${1}">
+		${2}
+	</footer>
+snippet form
+	<form action="${1}" method="${2:get}" accept-charset="utf-8">
+		${3}
+	</form>
+snippet form.
+	<form className="${1}" action="${2}" method="${3:get}" accept-charset="utf-8">
+		${4}
+	</form>
+snippet form#
+	<form id="${1}" action="${2}" method="${3:get}" accept-charset="utf-8">
+		${4}
+	</form>
+snippet h1
+	<h1>${1}</h1>
+snippet h1.
+	<h1 className="${1}">${2}</h1>
+snippet h1#
+	<h1 id="${1}">${2}</h1>
+snippet h2
+	<h2>${1}</h2>
+snippet h2.
+	<h2 className="${1}">${2}</h2>
+snippet h2#
+	<h2 id="${1}">${2}</h2>
+snippet h3
+	<h3>${1}</h3>
+snippet h3.
+	<h3 className="${1}">${2}</h3>
+snippet h3#
+	<h3 id="${1}">${2}</h3>
+snippet h4
+	<h4>${1}</h4>
+snippet h4.
+	<h4 className="${1}">${2}</h4>
+snippet h4#
+	<h4 id="${1}">${2}</h4>
+snippet h5
+	<h5>${1}</h5>
+snippet h5.
+	<h5 className="${1}">${2}</h5>
+snippet h5#
+	<h5 id="${1}">${2}</h5>
+snippet h6
+	<h6>${1}</h6>
+snippet h6.
+	<h6 className="${1}">${2}</h6>
+snippet h6#
+	<h6 id="${1}">${2}</h6>
+snippet header
+	<header>
+		${1}
+	</header>
+snippet header.
+	<header className="${1}">
+		${2}
+	</header>
+snippet header#
+	<header id="${1}">
+		${2}
+	</header>
+snippet hgroup
+	<hgroup>
+		${1}
+	</hgroup>
+snippet hgroup.
+	<hgroup className="${1}>
+		${2}
+	</hgroup>
+snippet hr
+	<hr />${1}
+snippet i
+	<i>${1}</i>
+snippet iframe
+	<iframe src="${1}" frameborder="0"></iframe>${2}
+snippet iframe.
+	<iframe className="${1}" src="${2}" frameborder="0"></iframe>${3}
+snippet iframe#
+	<iframe id="${1}" src="${2}" frameborder="0"></iframe>${3}
+snippet img
+	<img src="${1}" alt="${2}" />${3}
+snippet img.
+	<img className="${1}" src="${2}" alt="${3}" />${4}
+snippet img#
+	<img id="${1}" src="${2}" alt="${3}" />${4}
+snippet input
+	<input type="${1:text/submit/hidden/button/image}" name="${2}" id="${3:$2}" value="${4}" />${5}
+snippet input.
+	<input className="${1}" type="${2:text/submit/hidden/button/image}" name="${3}" id="${4:$3}" value="${5}" />${6}
+snippet input:text
+	<input type="text" name="${1}" id="${2:$1}" value="${3}" />${4}
+snippet input:submit
+	<input type="submit" name="${1}" id="${2:$1}" value="${3}" />${4}
+snippet input:hidden
+	<input type="hidden" name="${1}" id="${2:$1}" value="${3}" />${4}
+snippet input:button
+	<input type="button" name="${1}" id="${2:$1}" value="${3}" />${4}
+snippet input:image
+	<input type="image" name="${1}" id="${2:$1}" src="${3}" alt="${4}" />${5}
+snippet input:checkbox
+	<input type="checkbox" name="${1}" id="${2:$1}" />${3}
+snippet input:radio
+	<input type="radio" name="${1}" id="${2:$1}" />${3}
+snippet input:color
+	<input type="color" name="${1}" id="${2:$1}" value="${3}" />${4}
+snippet input:date
+	<input type="date" name="${1}" id="${2:$1}" value="${3}" />${4}
+snippet input:datetime
+	<input type="datetime" name="${1}" id="${2:$1}" value="${3}" />${4}
+snippet input:datetime-local
+	<input type="datetime-local" name="${1}" id="${2:$1}" value="${3}" />${4}
+snippet input:email
+	<input type="email" name="${1}" id="${2:$1}" value="${3}" />${4}
+snippet input:file
+	<input type="file" name="${1}" id="${2:$1}" value="${3}" />${4}
+snippet input:month
+	<input type="month" name="${1}" id="${2:$1}" value="${3}" />${4}
+snippet input:number
+	<input type="number" name="${1}" id="${2:$1}" value="${3}" />${4}
+snippet input:password
+	<input type="password" name="${1}" id="${2:$1}" value="${3}" />${4}
+snippet input:range
+	<input type="range" name="${1}" id="${2:$1}" value="${3}" />${4}
+snippet input:reset
+	<input type="reset" name="${1}" id="${2:$1}" value="${3}" />${4}
+snippet input:search
+	<input type="search" name="${1}" id="${2:$1}" value="${3}" />${4}
+snippet input:time
+	<input type="time" name="${1}" id="${2:$1}" value="${3}" />${4}
+snippet input:url
+	<input type="url" name="${1}" id="${2:$1}" value="${3}" />${4}
+snippet input:week
+	<input type="week" name="${1}" id="${2:$1}" value="${3}" />${4}
+snippet ins
+	<ins>${1}</ins>
+snippet kbd
+	<kbd>${1}</kbd>
+snippet keygen
+	<keygen>${1}</keygen>
+snippet label
+	<label for="${2:$1}">${1}</label>
+snippet label:i
+	<label for="${2:$1}">${1}</label>
+	<input type="${3:text/submit/hidden/button}" name="${4:$2}" id="${5:$2}" value="${6}" />${7}
+snippet label:s
+	<label for="${2:$1}">${1}</label>
+	<select name="${3:$2}" id="${4:$2}">
+		<option value="${5}">${6:$5}</option>
+	</select>
+snippet legend
+	<legend>${1}</legend>
+snippet legend+
+	<legend><span>${1}</span></legend>
+snippet li
+	<li>${1}</li>
+snippet li.
+	<li className="${1}">${2}</li>
+snippet li+
+	<li>${1}</li>
+	li+${2}
+snippet lia
+	<li><a href="${2:#}">${1}</a></li>
+snippet lia+
+	<li><a href="${2:#}">${1}</a></li>
+	lia+${3}
+snippet link
+	<link rel="${1}" href="${2}" title="${3}" type="${4}" />${5}
+snippet link:atom
+	<link rel="alternate" href="${1:atom.xml}" title="Atom" type="application/atom+xml" />${2}
+snippet link:css
+	<link rel="stylesheet" href="${2:style.css}" type="text/css" media="${3:all}" />${4}
+snippet link:favicon
+	<link rel="shortcut icon" href="${1:favicon.ico}" type="image/x-icon" />${2}
+snippet link:rss
+	<link rel="alternate" href="${1:rss.xml}" title="RSS" type="application/atom+xml" />${2}
+snippet link:touch
+	<link rel="apple-touch-icon" href="${1:favicon.png}" />${2}
+snippet map
+	<map name="${1}">
+		${2}
+	</map>
+snippet map.
+	<map className="${1}" name="${2}">
+		${3}
+	</map>
+snippet map#
+	<map name="${1}" id="${2:$1}>
+		${3}
+	</map>
+snippet map+
+	<map name="${1}">
+		<area shape="${2}" coords="${3}" href="${4}" alt="${5}" />${6}
+	</map>${7}
+snippet mark
+	<mark>${1}</mark>
+snippet menu
+	<menu>
+		${1}
+	</menu>
+snippet menu:c
+	<menu type="context">
+		${1}
+	</menu>
+snippet menu:t
+	<menu type="toolbar">
+		${1}
+	</menu>
+snippet meta
+	<meta http-equiv="${1}" content="${2}" />${3}
+snippet meta:compat
+	<meta http-equiv="X-UA-Compatible" content="IE=${1:7,8,edge}" />${3}
+snippet meta:refresh
+	<meta http-equiv="refresh" content="text/html;charset=UTF-8" />${3}
+snippet meta:utf
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />${3}
+snippet meter
+	<meter>${1}</meter>
+snippet nav
+	<nav>
+		${1}
+	</nav>
+snippet nav.
+	<nav className="${1}">
+		${2}
+	</nav>
+snippet nav#
+	<nav id="${1}">
+		${2}
+	</nav>
+snippet noscript
+	<noscript>
+		${1}
+	</noscript>
+snippet object
+	<object data="${1}" type="${2}">
+		${3}
+	</object>${4}
+# Embed QT Movie
+snippet movie
+	<object width="$2" height="$3" classid="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B"
+	 codebase="http://www.apple.com/qtactivex/qtplugin.cab">
+		<param name="src" value="$1" />
+		<param name="controller" value="$4" />
+		<param name="autoplay" value="$5" />
+		<embed src="${1:movie.mov}"
+			width="${2:320}" height="${3:240}"
+			controller="${4:true}" autoplay="${5:true}"
+			scale="tofit" cache="true"
+			pluginspage="http://www.apple.com/quicktime/download/" />
+	</object>${6}
+snippet ol
+	<ol>
+		${1}
+	</ol>
+snippet ol.
+	<ol className="${1}>
+		${2}
+	</ol>
+snippet ol#
+	<ol id="${1}>
+		${2}
+	</ol>
+snippet ol+
+	<ol>
+		<li>${1}</li>
+		li+${2}
+	</ol>
+snippet opt
+	<option value="${1}">${2:$1}</option>
+snippet opt+
+	<option value="${1}">${2:$1}</option>
+	opt+${3}
+snippet optt
+	<option>${1}</option>
+snippet optgroup
+	<optgroup>
+		<option value="${1}">${2:$1}</option>
+		opt+${3}
+	</optgroup>
+snippet output
+	<output>${1}</output>
+snippet p
+	<p>${1}</p>
+snippet param
+	<param name="${1}" value="${2}" />${3}
+snippet pre
+	<pre>
+		${1}
+	</pre>
+snippet progress
+	<progress>${1}</progress>
+snippet q
+	<q>${1}</q>
+snippet rp
+	<rp>${1}</rp>
+snippet rt
+	<rt>${1}</rt>
+snippet ruby
+	<ruby>
+		<rp><rt>${1}</rt></rp>
+	</ruby>
+snippet s
+	<s>${1}</s>
+snippet samp
+	<samp>
+		${1}
+	</samp>
+snippet script
+	<script type="text/javascript" charset="utf-8">
+		${1}
+	</script>
+snippet scriptsrc
+	<script src="${1}.js" type="text/javascript" charset="utf-8"></script>
+snippet newscript
+	<script type="application/javascript" charset="utf-8">
+		${1}
+	</script>
+snippet newscriptsrc
+	<script src="${1}.js" type="application/javascript" charset="utf-8"></script>
+snippet section
+	<section>
+		${1}
+	</section>
+snippet section.
+	<section className="${1}">
+		${2}
+	</section>
+snippet section#
+	<section id="${1}">
+		${2}
+	</section>
+snippet select
+	<select name="${1}" id="${2:$1}">
+		${3}
+	</select>
+snippet select.
+	<select name="${1}" id="${2:$1}" className="${3}>
+		${4}
+	</select>
+snippet select+
+	<select name="${1}" id="${2:$1}">
+		<option value="${3}">${4:$3}</option>
+		opt+${5}
+	</select>
+snippet small
+	<small>${1}</small>
+snippet source
+	<source src="${1}" type="${2}" media="${3}" />
+snippet span
+	<span>${1}</span>
+snippet strong
+	<strong>${1}</strong>
+snippet style
+	<style type="text/css" media="${1:all}">
+		${2}
+	</style>
+snippet sub
+	<sub>${1}</sub>
+snippet summary
+	<summary>
+		${1}
+	</summary>
+snippet sup
+	<sup>${1}</sup>
+snippet table
+	<table border="${1:0}">
+		${2}
+	</table>
+snippet table.
+	<table className="${1}" border="${2:0}">
+		${3}
+	</table>
+snippet table#
+	<table id="${1}" border="${2:0}">
+		${3}
+	</table>
+snippet tbody
+	<tbody>
+		${1}
+	</tbody>
+snippet td
+	<td>${1}</td>
+snippet td.
+	<td className="${1}">${2}</td>
+snippet td#
+	<td id="${1}">${2}</td>
+snippet td+
+	<td>${1}</td>
+	td+${2}
+snippet textarea
+	<textarea name="${1}" id=${2:$1} rows="${3:8}" cols="${4:40}">${5}</textarea>${6}
+snippet tfoot
+	<tfoot>
+		${1}
+	</tfoot>
+snippet th
+	<th>${1}</th>
+snippet th.
+	<th className="${1}">${2}</th>
+snippet th#
+	<th id="${1}">${2}</th>
+snippet th+
+	<th>${1}</th>
+	th+${2}
+snippet thead
+	<thead>
+		${1}
+	</thead>
+snippet time
+	<time datetime="${1}" pubdate="${2:$1}>${3:$1}</time>
+snippet title
+	<title>${1}</title>
+snippet tr
+	<tr>
+		${1}
+	</tr>
+snippet tr+
+	<tr>
+		<td>${1}</td>
+		td+${2}
+	</tr>
+snippet track
+	<track src="${1}" srclang="${2}" label="${3}" default="${4:default}>${5}</track>${6}
+snippet ul
+	<ul>
+		${1}
+	</ul>
+snippet ul.
+	<ul className="${1}">
+		${2}
+	</ul>
+snippet ul#
+	<ul id="${1}">
+		${2}
+	</ul>
+snippet ul+
+	<ul>
+		<li>${1}</li>
+		li+${2}
+	</ul>
+snippet var
+	<var>${1}</var>
+snippet video
+	<video src="${1}" height="${2}" width="${3}" preload="${5:none}" autoplay="${6:autoplay}">${7}</video>${8}
+snippet wbr
+	<wbr />${1}
+
+</acodsnip>
+
+<acodsnip class="vscode-react">
+
+snippet rcc | reactClassComponent #vscode-react
+	import React, { Component } from 'react';
+
+	class ${1:${TM_FILENAME_BASE}} extends Component {
+	render() {
+		return (
+			<div>
+				$0
+			</div>
+		);
+	}
+	}
+
+	export default ${1:${TM_FILENAME_BASE}};
+
+snippet rrc | reactReduxComponent #vscode-react
+	import React, { Component } from 'react';
+	import { connect } from 'react-redux';
+
+	function mapStateToProps(state) {
+	return {
+
+	};
+	}
+
+	class ${1:${TM_FILENAME_BASE}} extends Component {
+	render() {
+		return (
+			<div>
+				$0
+			</div>
+		);
+	}
+	}
+
+	export default connect(
+	mapStateToProps,
+	)(${1:${TM_FILENAME_BASE}});
+
+snippet rrdc | reactReduxDispatchComponent #vscode-react
+	import React, { Component } from 'react';
+	import { connect } from 'react-redux';
+
+	function mapStateToProps(state) {
+	return {
+
+	};
+	}
+
+	function mapDispatchToProps(dispatch) {
+	return {
+
+	};
+	}
+
+	class ${1:${TM_FILENAME_BASE}} extends Component {
+	render() {
+		return (
+			<div>
+				$0
+			</div>
+		);
+	}
+	}
+
+	export default connect(
+		mapStateToProps,
+	)(${1:${TM_FILENAME_BASE}});
+
+snippet rcjc | reactJustClassComponent #vscode-react
+	class ${1:${TM_FILENAME_BASE}} extends Component {
+	render() {
+		return (
+			<div>
+				$0
+			</div>
+		);
+	}
+	}
+
+
+snippet rccp | reactClassComponentPropTypes #vscode-react
+	import React, { Component } from 'react';
+	import PropTypes from 'prop-types';
+
+	class ${1:${TM_FILENAME_BASE}} extends Component {
+	render() {
+		return (
+			<div>
+				$0
+			</div>
+		);
+	}
+	}
+
+	${1:${TM_FILENAME_BASE}}.propTypes = {
+
+	};
+
+	export default ${1:${TM_FILENAME_BASE}};
+
+snippet rcfc | reactClassComponentWithMethods #vscode-react
+	import React, { Component } from 'react';
+	import PropTypes from 'prop-types';
+
+	class ${1:${TM_FILENAME_BASE}} extends Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			
+		}
+	}
+
+	static getDerivedStateFromProps() {
+		return null
+	}
+
+	componentDidMount() {
+		
+	}
+
+	// shouldComponentUpdate(nextProps, nextState) {}
+
+	getSnapshotBeforeUpdate(prevProps, prevState) {
+		return null
+	}
+
+	componentDidUpdate(prevProps, prevState, snapshot) {
+		
+	}
+
+	componentWillUnmount() {
+		
+	}
+
+	render() {
+		return (
+			<div>
+				
+			</div>
+		);
+	}
+	}
+
+	${1:${TM_FILENAME_BASE}}.propTypes = {
+	
+	};
+
+export default ${1:${TM_FILENAME_BASE}};
+
+snippet rwwd | reactWithWebpackDefaults #vscode-react
+	class ${1:${TM_FILENAME_BASE}} extends React.Component {
+	constructor(props) {
+		super(props);
+
+		this.state = {};
+
+	}
+
+	render() {
+		return (
+			<div>
+				$0
+			</div>
+		);
+	}
+	}
+
+	${1:${TM_FILENAME_BASE}}.propTypes = {
+
+	};
+
+	export default ${1:${TM_FILENAME_BASE}};
+
+	snippet rpc | reactPureComponent #vscode-react
+	import React, { PureComponent } from 'react';
+	import PropTypes from 'prop-types';
+
+	class ${1:${TM_FILENAME_BASE}} extends PureComponent {
+	render() {
+		return (
+			<div>
+				$0
+			</div>
+		);
+	}
+	}
+
+	${1:${TM_FILENAME_BASE}}.propTypes = {
+
+	};
+
+	export default ${1:${TM_FILENAME_BASE}};
+
+snippet rsc | reactStateless #vscode-react
+	import React from "react";
+
+	const ${TM_FILENAME_BASE} = () => {
+	return (
+		<div>
+			${1:${TM_FILENAME_BASE}}
+		</div>
+	);
+	};
+
+	export default ${TM_FILENAME_BASE};
+
+snippet rscp | reactStatelessProps #vscode-react
+	import React from 'react';
+	import PropTypes from 'prop-types';
+
+	const ${1:${TM_FILENAME_BASE}} = props => {
+	return (
+		<div>
+			
+		</div>
+	);
+	};
+
+	${1:${TM_FILENAME_BASE}}.propTypes = {
+	$0
+	};
+
+	export default ${1:${TM_FILENAME_BASE}};
+
+snippet rhc | reactHookProps #vscode-react
+	import React,{ useState } from 'react';
+	import PropTypes from 'prop-types';
+
+	const ${1:${TM_FILENAME_BASE}} = props => {
+	return (
+		<div>
+			
+		</div>
+	);
+	};
+
+	${1:${TM_FILENAME_BASE}}.propTypes = {
+	$0
+	};
+
+	export default ${1:${TM_FILENAME_BASE}};
+
+snippet rscm | reactMemo #vscode-react
+	import React, { memo } from 'react';
+
+	const ${1:${TM_FILENAME_BASE}} = memo(() => {
+	return (
+		<div>
+			$0
+		</div>
+	);
+	});
+
+	export default ${1:${TM_FILENAME_BASE}};
+
+snippet rscpm | reactMemoProps #vscode-react
+	import React, { memo } from 'react';
+	import PropTypes from 'prop-types';
+
+	const ${1:${TM_FILENAME_BASE}} = memo((props) => {
+	return (
+		<div>
+			
+		</div>
+	);
+	});
+
+	${1:${TM_FILENAME_BASE}}.propTypes = {
+	$0
+	};
+
+	export default ${1:${TM_FILENAME_BASE}};
+
+snippet fsc | flowStatelessComponent #vscode-react
+	// @flow 
+	import * as React from 'react';
+	type Props = {
+	$0
+	};
+	export const ${1:${TM_FILENAME_BASE}} = (props: Props) => {
+	return (
+		<div>
+			
+		</div>
+	);
+	};
+
+snippet fsf | flowStatelessFunction #vscode-react
+	// @flow,import * as React from 'react';,type Props = {,  $0,};,export function ${1:${TM_FILENAME_BASE}}(props: Props) {,  return (,    <div>,      ,    </div>,  );,};
+
+snippet fcc | flowClassComponent #vscode-react
+	// @flow,import * as React from 'react';,type Props = {,  $0,};,type State = {,  $1,};,export class ${2:${TM_FILENAME_BASE}} extends React.Component<props, state="">{,  render() {,    return (,      <div>,        ,      </div>,    );,  };,};
+
+snippet rsf | reactStatelessFunction #vscode-react
+	import React from 'react';
+
+	function ${1:${TM_FILENAME_BASE}}(props) {
+	return (
+		<div>
+			
+		</div>
+	);
+	}
+
+	export default ${1:${TM_FILENAME_BASE}};
+
+snippet rsfp | reactStatelessFunctionProps #vscode-react
+	import React from 'react';
+	import PropTypes from 'prop-types';
+
+	${1:${TM_FILENAME_BASE}}.propTypes = {
+	$0
+	};
+
+function ${1:${TM_FILENAME_BASE}}(props) {
+	return (
+		<div>
+			
+		</div>
+	);
+	}
+
+	export default ${1:${TM_FILENAME_BASE}};
+
+snippet rsi | reactStatelessImplicitReturn #vscode-react
+	import React from 'react';
+
+	const ${1:${TM_FILENAME_BASE}} = (props) => (
+			$0
+	);
+
+	export default ${1:${TM_FILENAME_BASE}};
+
+snippet con | classConstructor #vscode-react
+	constructor(props) {
+	super(props);
+	$0
+	}
+
+
+snippet conc | classConstructorContext #vscode-react
+	constructor(props, context) {
+	super(props, context);
+	$0
+	}
+
+
+snippet est | emptyState #vscode-react
+	this.state = {
+	$1
+	};
+
+snippet cwm | componentWillMount #vscode-react
+	
+	componentWillMount() {
+	$0
+	}
+
+
+snippet cdm | componentDidMount #vscode-react
+	componentDidMount() {
+	$0
+	}
+
+
+snippet cwr | componentWillReceiveProps #vscode-react
+	componentWillReceiveProps(nextProps) {
+	$0
+	}
+
+
+snippet scu | shouldComponentUpdate #vscode-react
+	shouldComponentUpdate(nextProps, nextState) {
+	$0
+	}
+
+
+snippet cwup | componentWillUpdate #vscode-react
+	componentWillUpdate(nextProps, nextState) {
+	$0
+	}
+
+
+snippet cdup | componentDidUpdate #vscode-react
+	componentDidUpdate(prevProps, prevState) {
+	$0
+	}
+
+
+snippet cwun | componentWillUnmount #vscode-react
+	componentWillUnmount() {
+	$0
+	}
+
+
+snippet ren | componentRender #vscode-react
+	render() {
+	return (
+		<div>
+			$0
+		</div>
+	);
+	}
+
+snippet sst | componentSetStateObject #vscode-react
+	this.setState($0);
+
+snippet ssf | componentSetStateFunc #vscode-react
+	this.setState((state, props) => { return { $0 }});
+
+
+snippet props | componentProps #vscode-react
+	this.props.$0
+
+snippet state | componentState #vscode-react
+	this.state.$0
+
+snippet bnd | bindThis #vscode-react
+	this.$1 = this.$1.bind(this);$0
+
+snippet rpt | propTypes #vscode-react
+	${1:$TM_FILENAME_BASE}.propTypes = {
+	$2
+	};
+
+snippet rdp | defaultProps #vscode-react
+	${1:$TM_FILENAME_BASE}.defaultProps = {
+	$2
+	};
+
+snippet pta | propTypeArray #vscode-react
+	PropTypes.array,
+
+snippet ptar | propTypeArrayRequired #vscode-react
+	PropTypes.array.isRequired,
+
+snippet ptb | propTypeBool #vscode-react
+	PropTypes.bool,
+
+snippet ptbr | propTypeBoolRequired #vscode-react
+	PropTypes.bool.isRequired,
+
+snippet ptf | propTypeFunc #vscode-react
+	PropTypes.func,
+
+snippet ptfr | propTypeFuncRequired #vscode-react
+	PropTypes.func.isRequired,
+
+snippet ptn | propTypeNumber #vscode-react
+	PropTypes.number,
+
+snippet ptnr | propTypeNumberRequired #vscode-react
+	PropTypes.number.isRequired,
+
+snippet pto | propTypeObject #vscode-react
+	PropTypes.object,
+
+snippet ptor | propTypeObjectRequired #vscode-react
+	PropTypes.object.isRequired,
+
+snippet pts | propTypeString #vscode-react
+	PropTypes.string,
+
+snippet ptsr | propTypeStringRequired #vscode-react
+	PropTypes.string.isRequired,
+
+snippet ptsm | propTypeSymbol #vscode-react
+	PropTypes.symbol,
+
+snippet ptsmr | propTypeSymbolRequired #vscode-react
+	PropTypes.symbol.isRequired,
+
+snippet ptan | propTypeAny #vscode-react
+	PropTypes.any,
+
+snippet ptanr | propTypeAnyRequired #vscode-react
+	PropTypes.any.isRequired,
+
+snippet ptnd | propTypeNode #vscode-react
+	PropTypes.node,
+
+snippet ptndr | propTypeNodeRequired #vscode-react
+	PropTypes.node.isRequired,
+
+snippet ptel | propTypeElement #vscode-react
+	PropTypes.element,
+
+snippet ptelr | propTypeElementRequired #vscode-react
+	PropTypes.element.isRequired,
+
+snippet pti | propTypeInstanceOf #vscode-react
+	PropTypes.instanceOf($0),
+
+snippet ptir | propTypeInstanceOfRequired #vscode-react
+	PropTypes.instanceOf($0).isRequired,
+
+snippet pte | propTypeEnum #vscode-react
+	PropTypes.oneOf(['$0']),
+
+snippet pter | propTypeEnumRequired #vscode-react
+	PropTypes.oneOf(['$0']).isRequired,
+
+snippet ptet | propTypeOneOfType #vscode-react
+	PropTypes.oneOfType([
+	$0
+	]),
+
+snippet ptetr | propTypeOneOfTypeRequired #vscode-react
+	PropTypes.oneOfType([
+	$0
+	]).isRequired,
+
+snippet ptao | propTypeArrayOf #vscode-react
+	PropTypes.arrayOf($0),
+
+snippet ptaor | propTypeArrayOfRequired #vscode-react
+	PropTypes.arrayOf($0).isRequired,
+
+snippet ptoo | propTypeObjectOf #vscode-react
+	PropTypes.objectOf($0),
+
+snippet ptoor | propTypeObjectOfRequired #vscode-react
+	PropTypes.objectOf($0).isRequired,
+
+snippet ptoos | propTypeObjectOfShape #vscode-react
+	PropTypes.objectOf(PropTypes.shape($0)),
+
+snippet ptoosr | propTypeObjectOfShapeRequired #vscode-react
+	PropTypes.objectOf(PropTypes.shape($0)).isRequired,
+
+snippet ptsh | propTypeShape #vscode-react
+	PropTypes.shape({
+	$0
+	}),
+
+snippet ptshr | propTypeShapeRequired #vscode-react
+	PropTypes.shape({
+	$0
+	}).isRequired,
+
+snippet gsbu | getSnapshotBeforeUpdate #vscode-react
+	getSnapshotBeforeUpdate(prevProps, prevState) {
+	$0
+	}
+
+
+snippet gdsfp | getDerivedStateFromProps #vscode-react
+	static getDerivedStateFromProps(nextProps, prevState) {
+	$0
+	}
+
+
+snippet cdc | componentDidCatch #vscode-react
+	componentDidCatch(error, info) {
+	$0
+	}
+
+
+snippet disp | dispatchRedux #vscode-react
+	function mapDispatchToProps(dispatch) {
+	return {
+	}
+
+	}
+
+snippet usf | useEffect #vscode-react
+	useEffect(() => {
+	$0
+	})
+
+snippet usfu | useEffectUnMount #vscode-react
+	useEffect(() => {
+	$0 return () => {
+	$0
+	}
+	})
+
+snippet usfd | useEffectDidMount #vscode-react
+	useEffect(() => {
+	$0
+	},[])
+
+	</props,>
+	
+</acodsnip>
+
+# Prototype
+snippet proto
+	${1:class_name}.prototype.${2:method_name} = function(${3:first_argument}) {
+		${4:// body...}
+	};
+# Function
+snippet fun
+	function ${1?:function_name}(${2:argument}) {
+		${3:// body...}
+	}
+# Anonymous Function
+regex /((=)\s*|(:)\s*|(\()|\b)/f/(\))?/
+snippet f
+	function${M1?: ${1:functionName}}($2) {
+		${0}
+	}${M2?;}${M3?,}${M4?)}
+# Immediate function
+trigger \(?f\(
+endTrigger \)?
+snippet f(
+	(function(${1}) {
+		${0:/* code */}
+	}(${1}));
+# if
+snippet if
+	if (${1:true}) {
+		${0}
+	}
+# if ... else
+snippet ife
+	if (${1:true}) {
+		${2}
+	} else {
+		${0}
+	}
+# tertiary conditional
+snippet ter
+	${1:/* condition */} ? ${2:a} : ${3:b}
+# switch
+snippet switch
+	switch (${1:expression}) {
+		case '${3:case}':
+			${4:// code}
+			break;
+		${5}
+		default:
+			${2:// code}
+	}
+# case
+snippet case
+	case '${1:case}':
+		${2:// code}
+		break;
+	${3}
+
+# while (...) {...}
+snippet wh
+	while (${1:/* condition */}) {
+		${0:/* code */}
+	}
+# try
+snippet try
+	try {
+		${0:/* code */}
+	} catch (e) {}
+# do...while
+snippet do
+	do {
+		${2:/* code */}
+	} while (${1:/* condition */});
+# Object Method
+snippet :f
+regex /([,{[])|^\s*/:f/
+	${1:method_name}: function(${2:attribute}) {
+		${0}
+	}${3:,}
+# Timer functions
+snippet setTimeout
+regex /\b/st|timeout|setTimeo?u?t?/
+	setTimeout(function() {${2}}, ${1:10});
+snippet setInterval
+	setInterval(function() {${2}}, ${1:10});
+# Get Elements
+snippet getc
+	document.getElementsByClassName('${1}')${2}
+snippet gett
+	document.getElementsByTagName('${1}')${2}
+snippet query
+	document.querySelector("${1}")
+# Get Element
+snippet get
+	document.getElementById('${1}')${2}
+snippet queryAll
+	document.querySelectorAll("${1}")
+# eventlistener
+snippet addeventlistener
+	addEventListener("${1:click}", ${2})
+
+# console.log (Firebug)
+snippet cl
+	console.log(${1});
+# return
+snippet ret
+	return ${1:result}
+# hasOwnProperty
+snippet has
+	hasOwnProperty(${1})
+# docstring
+snippet /**
+	/**
+	 * ${1:description}
+	 *
+	 */
+snippet @par
+regex /^\s*\*\s*/@(para?m?)?/
+	param {${1:type}} ${2:name} ${3:description}
+snippet @ret
+	returns {${1:type}} ${2:description}
+# JSON.parse
+snippet jsonp
+	JSON.parse(${1:jstr});
+# JSON.stringify
+snippet jsons
+	JSON.stringify(${1:object});
+# self-defining function
+snippet sdf
+	var ${1:function_name} = function(${2:argument}) {
+		${3:// initial code ...}
+
+		$1 = function($2) {
+			${4:// main code}
+		};
+	}
+# singleton
+snippet sing
+	function ${1:Singleton} (${2:argument}) {
+		// the cached instance
+		var instance;
+
+		// rewrite the constructor
+		$1 = function $1($2) {
+			return instance;
+		};
+		
+		// carry over the prototype properties
+		$1.prototype = this;
+
+		// the instance
+		instance = new $1();
+
+		// reset the constructor pointer
+		instance.constructor = $1;
+
+		${3:// code ...}
+
+		return instance;
+	}
+# class
+snippet class
+regex /^\s*/clas{0,2}/
+	class ${1:Name}{
+		$0
+	}
+snippet constructor
+	constructor(${1}){
+		this.$1 = $1;
+	}
+snippet method
+	${1:name}(${2:args}) {
+		${0}
+	}
+snippet this.
+	this.${1} = $1;
+# 
+snippet for-
+	for (let ${1:i} = ${2:Things}.length; ${1:i}--; ) {
+		${0:${2:Things}[${1:i}];}
+	}
+# for (...) {...}
+snippet for
+	for (let ${1:i} = 0; $1 < ${2:Things}.length; $1++) {
+		${3:$2[$1]}$0
+	}
+# for (...) {...} (Improved Native For-Loop)
+snippet forr
+	for (let ${1:i} = ${2:Things}.length - 1; $1 >= 0; $1--) {
+		${3:$2[$1]}$0
+	}
+# for (property in object ) { ... }
+snippet fori
+	for (let ${1:prop} in ${2:Things}) {
+		${0:$2[$1]}
+	}
+
+#modules
+snippet def
+	define(function(require, exports, module) {
+	"use strict";
+	const ${1/.*\///} = require("${1}");
+	
+	});
+snippet req
+guard ^\s*
+	const ${1/.*\///} = require("${1}");
+	$0
+snippet requ
+guard ^\s*
+	const ${1/.*\/(.)/\u$1/} = require("${1}").${1/.*\/(.)/\u$1/};
+	$0
+snippet prom
+	new Promise((resolve, reject) => {
+		$1
+	});
+# documentEventListener (FS Nirjhor)
+snippet eel ElementEventListener
+	document.getElementById('${1}').addEventListener("click", ${2} );
+# fetchAPI (FS Nirjhor)		
+snippet fetch fetchAPI
+	fetch(`${1}`)
+	.then(res => res.json())
+	.then(data => {
+		${2}
+	})
+	.catch(error => console.log(error.message));
+# arrow function (FS Nirjhor)
+snippet arrow arrowFunction
+	const ${1:functionName} = (${2}) => {
+		${3}
+	};
+# innerText (FS Nirjhor)
+snippet innerText
+	document.getElementById('${1}').innerText
+# innerHTML (FS Nirjhor)
+snippet innerHTML
+	document.getElementById('${1}').innerHTML
+# value (FS Nirjhor)
+snippet value DOM input value
+	document.getElementById('${1}').value
+# callFunction (FS Nirjhor)
+snippet funcCall callFunction
+	${1:functionName}(${2});
+# dynamic variable (FS Nirjhor)
+snippet $ variable
+	${${1}}
+#React Variable (FS Nirjhor )
+snippet { React-variable
+	{${1}}
+#colon (FS Nirjhor)
+snippet " Colon
+	"${1}"
+# html tag (FS Nirjhor)
+snippet < Tag
+	<${1} >${2}</$1>
+# closing tag (FS Nirjhor)
+snippet ct Closing-Tag
+	<${1}/>
+# Route tag (FE Nirjhor)
+snippet Route Route-tag
+	<Route path="/${1}" element={<${1/(.)/\u$1/}/>}/>
+snippet onc onClick attribute
+	onClick = { () => ${1:handleClick}() }
+
+		
+<acodsnip class="jsx">
+# Imports
+snippet imr
+	import React from 'react';
+snippet imrd
+	import ReactDOM from "react-dom";
+snippet imrc
+	import React, { ${1} } from 'react';
+snippet impf
+	import ${1/.*\///} from "${1}";
+snippet imps
+	import { use${1:State} } from "react";
+snippet impse
+	import { useState, useEffect } from "react";
+snippet impt
+	import PropTypes from 'prop-types';
+# import snippet (FS NIRJHOR)
+snippet impRRD From react-router-dom
+	import { ${1} } from "react-router-dom";
+snippet impBR From react-bootstrap
+	import { ${1} } from "react-bootstrap";
+snippet impCSS Import CSS
+	import "./${1:${TM_FILENAME_BASE}}.css";
+snippet impForApp for App.js
+	import ${1} from "./components/$1/$1";
+snippet impForParent for parent components 
+	import ${1} from "../$1/$1";
+snippet impMUI Matarial UI
+	import { ${1} } from "@mui/material";
+snippet impFA Font Awesome 
+	import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+	import { fa${1} } from '@fortawesome/free-solid-svg-icons';
+snippet impCD react-redux
+	import {useDispatch, useSelector} from "react-redux";
+
+# Skeletons
+snippet rcc
+	export default class $1 extends Component {
+		render() {
+			return $2
+		}
+	}
+snippet rfc
+	function ${1:Comp}() {
+		return (
+		
+		)
+	}
+	
+	export default $1;
+snippet rfce
+	export default function ${1:Comp}() {
+		return (
+		
+		)
+	}
+snippet rafc
+	const ${1:Comp} = () => {
+		return (
+		
+		)
+	}
+	
+	export default $1;
+# Hooks
+snippet uste
+	const [${1}, ${1/(.)/set\u$1/}] = useState();
+snippet usef
+	useEffect(() => {
+		${1}
+	}, []);
+snippet rcontext
+	const ${1:contextName} = React.createContext($2);
+snippet ucontext
+	const ${1:value} = useContext($2);
+# Iteration
+snippet map
+	${1:arrayName}.map(${2:element} => { ${3} })
+</acodsnip>
+
+	
